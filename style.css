@@ -1,0 +1,67 @@
+:root {
+  --betong-lys: #E8E6E1;
+  --betong-mørk: #4A4A47;
+  --tre: #B87333;
+  --sort: #1C1C1A;
+  --hvit: #FAF9F6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: barlow condensed;
+  color: var(--sort);
+}
+
+nav {
+    background-color: var(--betong-mørk);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  justify-content: flex-end;
+  padding: 16px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--tre);
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: var(--betong-lys);
+}
+
+.hero img {
+  width: 444px;
+  margin-bottom: -33px;
+}
+
+.hero h1 {
+  margin-bottom: 16px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 24px;
+  font-size: 1.2rem;
+}
+
+.knapp {
+  display: inline-block;
+  background-color: var(--tre);
+  color: var(--hvit);
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-weight: bold;
+}
