@@ -1,11 +1,18 @@
+/* ============================================
+   FARGER (variabler)
+   ============================================ */
 :root {
-  --betong-lys: #E8E6E1;
-  --betong-mørk: #4A4A47;
-  --tre: #B87333;
-  --sort: #1C1C1A;
-  --hvit: #FAF9F6;
+  --grå-lys: #E8E6E1;
+  --grå-mørk: #4A4A47;
+  --tre-varm: #B87333;
+  --tre-varm-2: #A56A3A;
+  --mørk-tekst: #1C1C1A;
+  --lys-tekst: #D9D9D9;
 }
 
+/* ============================================
+   GRUNNLEGGENDE / RESET
+   ============================================ */
 * {
   margin: 0;
   padding: 0;
@@ -13,12 +20,15 @@
 }
 
 body {
-  font-family: barlow condensed;
-  color: var(--sort);
+  font-family: "Barlow Condensed", sans-serif;
+  color: var(--mørk-tekst);
 }
 
+/* ============================================
+   NAV (toppmeny)
+   ============================================ */
 nav {
-    background-color: var(--betong-mørk);
+  background-color: var(--grå-mørk);
 }
 
 nav ul {
@@ -31,14 +41,17 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: var(--tre);
+  color: var(--tre-varm);
   font-weight: bold;
 }
 
+/* ============================================
+   HERO (topp med logo + overskrift)
+   ============================================ */
 .hero {
   text-align: center;
   padding: 60px 20px;
-  background-color: var(--betong-lys);
+  background-color: var(--grå-lys);
 }
 
 .hero img {
@@ -56,12 +69,70 @@ nav a {
   font-size: 1.2rem;
 }
 
+/* ============================================
+   KNAPP
+   ============================================ */
 .knapp {
   display: inline-block;
-  background-color: var(--tre);
-  color: var(--hvit);
+  background-color: var(--tre-varm);
+  color: var(--lys-tekst);
   text-decoration: none;
   padding: 14px 32px;
   border-radius: 6px;
   font-weight: bold;
+}
+
+/* ============================================
+   TJENESTER (mørk seksjon med bildegalleri)
+   ============================================ */
+.tjenester {
+  background-color: var(--grå-mørk);
+  padding: 50px 20px;
+}
+
+.tjenester h2 {
+  text-align: center;
+  color: var(--lys-tekst);
+  margin-bottom: 32px;
+}
+
+/* --- Galleri-container --- */
+.galleri {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* --- Rader i galleriet --- */
+.rad-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.rad-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+/* --- Bilder i radene --- */
+.rad-2 img,
+.rad-3 img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* --- Tekstboks i galleriet --- */
+.tekstboks {
+  background-color: var(--tre-varm);
+  color: var(--lys-tekst);
+  padding: 20px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
