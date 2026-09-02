@@ -9,47 +9,77 @@
 </head>
 <body>
 
-    <header>
-      <nav>
-        <ul>
-            <li><a href="index.html">Hjem</a></li>
-            <li><a href="#">Snekker &amp; tremøbler</a></li>
-            <li><a href="#">Bygg &amp; små prosjekter</a></li>
-            <li><a href="#">Kontakt</a></li>
-        </ul>
-      </nav>
-    </header>
+  <!-- ===== TOPPMENY ===== -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="#">Snekker &amp; tremøbler</a></li>
+        <li><a href="#">Bygg &amp; små prosjekter</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="hero">
-     <img src="bilder/logo.png" alt="Melbye Tre og Betong">
-     <h1>Bygger skikkelig og lokalt på Sør-Helgeland</h1>
-     <p>Melbye Tre og Betong leverer snekkerarbeid, tremøbler og mindre byggeprosjekter i Sømna, Brønnøy og Bindal.</p>
-     <a href="kontakt.html" class="knapp">Ta kontakt</a>
-    </section>
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <img src="bilder/logo.png" alt="Melbye Tre og Betong">
+    <h1>Bygger skikkelig og lokalt på Sør-Helgeland</h1>
+    <p>Melbye Tre og Betong leverer snekkerarbeid, tremøbler og mindre byggeprosjekter i Sømna, Brønnøy og Bindal.</p>
+    <a href="#kontakt" class="knapp">Ta kontakt</a>
+  </section>
 
-    <section class="tjenester">
-        <h2>Fagkunnskap i bunn, håndtverk i hver detalj</h2>
+  <!-- ===== TJENESTER / GALLERI ===== -->
+  <section class="tjenester">
+    <h2>Fagkunnskap i bunn, håndtverk i hver detalj</h2>
 
-        <div class="galleri">
-   
-         <div class="rad-2">
-           <img src="bilder/hus.jpeg" alt="nyoppusset eldre hus med fine utsmykkninger">
-           <img src="bilder/fjøs.jpeg" alt="nyoppusset fjøs med tretrapp">
-         </div>
-                       
-         <div class="rad-3">
-            <img src="bilder/tak.jpeg" alt="listefritt tretakpanel i tak med mange vinkler">
-            <h3>Bygget for å vare</h3>
-            <p>Med nesten 20 år i anleggsbransjen vet han hva som skal til for at ting holder — fra plassbygd skap til støpt fundament.</p>
-            <img src="#" alt="#">
-         </div>
+    <div class="galleri">
 
-         <div class="rad-2">
-            <img src="bilder/betong.jpeg" alt="betongvegg og steinvegg med gjerde">
-            <img src="bilder/brygge.jpeg" alt="støpt kai og gjerding med port rundt liten havn">
-          </div>
+      <!-- Rad 1: to bilder -->
+      <div class="rad-2">
+        <img src="bilder/hus.jpeg" alt="nyoppusset eldre hus med fine utsmykkninger">
+        <img src="bilder/fjøs.jpeg" alt="nyoppusset fjøs med tretrapp">
+      </div>
+
+      <!-- Rad 2: bilde + tekstboks + bilde -->
+      <div class="rad-3">
+        <img src="bilder/tak.jpeg" alt="listefritt tretakpanel i tak med mange vinkler">
+        <div class="tekstboks">
+          <h3>Bygget for å vare</h3>
+          <p>Med nesten 20 år i anleggsbransjen vet han hva som skal til for at ting holder — fra plassbygd skap til støpt fundament.</p>
         </div>
-    </section>
+        <img src="#" alt="#">
+      </div>
+
+      <!-- Rad 3: to bilder -->
+      <div class="rad-2">
+        <img src="bilder/betong.jpeg" alt="betongvegg og steinvegg med gjerde">
+        <img src="bilder/brygge.jpeg" alt="støpt kai og gjerding med port rundt liten havn">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== KONTAKT ===== -->
+  <section class="kontakt" id="kontakt">
+    <h2>Har du et prosjekt på gang?</h2>
+    <p>Ta en uforpliktende prat om hva du trenger — enten det er en idé, en skisse eller bare et spørsmål.</p>
+
+    <form action="https://formspree.io/f/DITT-ID" method="POST">
+      <input type="text" name="navn" placeholder="Navn" required>
+      <input type="text" name="kontakt" placeholder="Telefon eller e-post" required>
+      <textarea name="melding" placeholder="Hva kan vi hjelpe deg med?" required></textarea>
+      <button type="submit" class="knapp">Send</button>
+    </form>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p class="footer-navn">Melbye Tre og Betong</p>
+    <p>Org.nr: 938 229 805</p>
+    <p>Telefon: 000 00 000 · E-post: post@melbyetreogbetong.no</p>
+    <p>Sør-Helgeland — Sømna, Brønnøy, Bindal</p>
+  </footer>
 
 </body>
 </html>

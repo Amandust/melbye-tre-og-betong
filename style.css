@@ -3,7 +3,8 @@
    ============================================ */
 :root {
   --grå-lys: #E8E6E1;
-  --grå-mørk: #4A4A47;
+  --grå-mørk: #696967;
+  --grå-mørk-mørk: #464644;
   --tre-varm: #B87333;
   --tre-varm-2: #A56A3A;
   --mørk-tekst: #1C1C1A;
@@ -28,7 +29,13 @@ body {
    NAV (toppmeny)
    ============================================ */
 nav {
-  background-color: var(--grå-mørk);
+  background-color: var(--grå-mørk-mørk);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 nav ul {
@@ -87,12 +94,14 @@ nav a {
    ============================================ */
 .tjenester {
   background-color: var(--grå-mørk);
+  border: 33px solid #464644;
   padding: 50px 20px;
 }
 
 .tjenester h2 {
   text-align: center;
   color: var(--lys-tekst);
+  margin-top: -22px;
   margin-bottom: 32px;
 }
 
@@ -128,11 +137,78 @@ nav a {
 
 /* --- Tekstboks i galleriet --- */
 .tekstboks {
-  background-color: var(--tre-varm);
+  background-color: var(--grå-mørk-mørk);
   color: var(--lys-tekst);
   padding: 20px;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.tekstboks h3 {
+  color: #B87333;
+  text-align: center;
+  margin-top: -88px;
+  margin-bottom: 33px;
+}
+
+/* ============================================
+   KONTAKT
+   ============================================ */
+.kontakt {
+  background-color: var(--grå-lys);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.kontakt h2 {
+  margin-bottom: 12px;
+}
+
+.kontakt p {
+  max-width: 500px;
+  margin: 0 auto 24px;
+}
+
+.kontakt form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.kontakt input,
+.kontakt textarea {
+  padding: 12px;
+  border: 1px solid var(--grå-mørk);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.kontakt textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+  background-color: var(--grå-mørk-mørk);
+  color: var(--lys-tekst);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+footer p {
+  margin-bottom: 6px;
+}
+
+.footer-navn {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--tre-varm);
 }
