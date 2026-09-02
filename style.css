@@ -139,7 +139,8 @@ nav a {
 .tekstboks {
   background-color: var(--grå-mørk-mørk);
   color: var(--lys-tekst);
-  padding: 20px;
+  text-align: center;
+  padding: 20px 66px;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
@@ -149,8 +150,8 @@ nav a {
 .tekstboks h3 {
   color: #B87333;
   text-align: center;
-  margin-top: -88px;
-  margin-bottom: 33px;
+  margin-top: -33px;
+  margin-bottom: 22px;
 }
 
 /* ============================================
