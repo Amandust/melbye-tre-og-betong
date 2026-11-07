@@ -213,3 +213,33 @@ footer p {
   font-size: 1.2rem;
   color: var(--tre-varm);
 }
+
+/* ============================================
+   MOBIL (skjermer under 700px)
+   ============================================ */
+@media (max-width: 700px) {
+
+  /* Logo mindre så den får plass */
+  .hero img {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  /* Galleri: alt i én kolonne, stablet */
+  .rad-2,
+  .rad-3 {
+    grid-template-columns: 1fr;
+  }
+
+  /* Tynnere ramme rundt tjenester på mobil */
+  .tjenester {
+    border-width: 10px;
+  }
+
+  /* Nav-lenker litt tettere */
+  nav ul {
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
